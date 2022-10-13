@@ -1,10 +1,11 @@
 
 
-var btnElm = document.getElementById('btnClick'),
-        btnClear = document.getElementById('btnClear'),
-        pElm = document.getElementById('contarClick')
-sect = document.getElementById('sect'),
-        contar = 0;
+var btnElm = document.getElementById('btnClick');
+var btnClear = document.getElementById('btnClear');
+var pElm = document.getElementById('contarClick');
+var sect = document.getElementById('sect');
+var btnPag = document.getElementById('buttonClick');
+var contar = 0;
 
 const sbg = function () {
     const randColor = Math.floor(Math.random() * 16777215).toString(16);
@@ -24,3 +25,10 @@ btnClear.onclick = function () {
     contar = 0;
     sect.style.backgroundColor = "white";
 }
+
+
+btnPag.onclick = function () {
+    window.location = "home.html";
+}
+
+

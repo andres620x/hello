@@ -32,3 +32,13 @@ function callAnothePage()
 {
     window.location = "home.html";
 }
+
+
+var btnBack = document.getElementById('backbutton');
+
+
+btnBack.onclick = function () {
+
+    alert('hola');
+    window.location = "index.html";
+}
