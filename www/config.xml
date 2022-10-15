@@ -27,6 +27,7 @@
     <author email="info@com.coolappz" href="http://www.coolappz.com">Andres</author>
         
     <access origin="*"/>
+
         
     <preference name="fullscreen" value="true"/>
         
