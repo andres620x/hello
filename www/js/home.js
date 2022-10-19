@@ -27,26 +27,7 @@ function onDeviceReady() {
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
 }
 
-function callAnothePage()
-{
-    window.location = "home.html";
-}
 
 
-var btnBack = document.getElementById('backbutton');
 
 
-btnBack.onclick = function () {
-
-    alert('hola');
-    window.location = "index.html";
-}
-
-
-var menu_btn = document.querySelector("#menu-btn");
-var sidebar = document.querySelector("#sidebar");
-var container = document.querySelector(".my-container");
-menu_btn.addEventListener("click", () => {
-    sidebar.classList.toggle("active-nav");
-    container.classList.toggle("active-cont");
-});

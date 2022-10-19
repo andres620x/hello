@@ -41,7 +41,7 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-        <title>Home</title>
+        <title>Sintaxis</title>
     </head>
     <body>
         <div class="app">
@@ -58,7 +58,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active"  id="backbutton" name="backbutton" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Link</a>
@@ -89,23 +89,41 @@
             <!--Nav -->
 
             <!-- Side-Nav -->
-            <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+            <div class="side-navbar active-nav " id="sidebar">
                 <ul class="nav flex-column text-white w-100">
-                    <a href="#" class="nav-link h3 text-white my-2">
-                        Responsive </br>SideBar Nav
-                    </a>
+                    <a href="#" class="nav-link h3 text-white my-2">Temas</a>
                     <li href="#" class="nav-link">
                         <i class="bx bxs-dashboard"></i>
-                        <span class="mx-2">Home</span>
+                        <span onclick="callAcerca()" class="mx-2">¿Que es?</span>
                     </li>
                     <li href="#" class="nav-link">
                         <i class="bx bx-user-check"></i>
-                        <span class="mx-2">Profile</span>
+                        <span onclick="callSintaxis()" class="mx-2">Sinxtaxis</span>
                     </li>
-                    <li href="#" class="nav-link">
+                    <li  class="nav-link">
                         <i class="bx bx-conversation"></i>
-                        <span class="mx-2">Contact</span>
+                        <span onclick="callVentajas()" class="mx-2">Ventajas/Desventajas</span>
                     </li>
+                    <li  class="nav-link">
+                        <i class="bx bx-conversation"></i>
+                        <span onclick="callEstado()" class="mx-2">Estado</span>
+                    </li>
+
+                    <li  class="nav-link">
+                        <i class="bx bx-conversation"></i>
+                        <span onclick="callCaracteristicas()" class="mx-2">Caracteristicas</span>
+                    </li>
+
+                    <li  class="nav-link">
+                        <i class="bx bx-conversation"></i>
+                        <span onclick="callArquitectura()" class="mx-2">Arquitectura</span>
+                    </li>
+
+                    <li  class="nav-link">
+                        <i class="bx bx-conversation"></i>
+                        <span onclick="callAplicaciones()" class="mx-2">Aplicaciones</span>
+                    </li>
+
                 </ul>
 
                 <span href="#" class="nav-link h4 w-100 mb-5">
@@ -121,20 +139,31 @@
             <div class="p-1 my-container active-cont">
                 <!-- Top Nav -->
                 <nav class="navbar top-navbar navbar-light bg-light px-5">
-   
+
                 </nav>
                 <!--End Top Nav -->
-                <h3 class="text-dark p-3">RESPONSIVE SIDEBAR NAV 💻 📱
-                </h3>
-                <p class="px-3">Responsive navigation sidebar built using <a class="text-dark" href="https://getbootstrap.com/">Bootstrap 5</a>.</p>
-                <p class="px-3"><a href="https://github.com/harshitjain-hj" class="text-dark">Checkout my Github</a></p>
+                <h3 class="text-dark p-3">Sintaxis</h3>
+
+
+                <p class="px-3">Apache Cordova permite, a los programadores de software, construir aplicaciones para dispositivos móviles utilizando CSS3,</p>
+                <p class="px-3">HTML5, y JavaScript en vez de utilizar APIs específicas de cada plataforma como Android, iOS, o Windows Phone. Permite </p>
+                <p class="px-3">encapsular CSS, HTML, y código de Javascript dependiendo de la plataforma del dispositivo. Extiende las características de HTML y JavaScript</p>
+                <p class="px-3">para trabajar con el dispositivo. Las aplicaciones resultantes son híbridas, lo que significa que no son ni </p>
+                <p class="px-3">una aplicación móvil nativa (porque toda la representación gráfica se realiza vía vistas de Web en vez del framework nativo) </p>
+                <p class="px-3">ni puramente basadas en web (porque no son solo aplicaciones web, sino que están empaquetadas como aplicaciones para su </p>
+                <p class="px-3">distribución y tienen acceso a las APIs nativas del dispositivo). La mezcla de código nativo e híbrido ha sido posible desde la</p> 
+                <p class="px-3">    versión 1.9.</p>
+                <br>
+                <img src="img/sintaxis.png"/>
+                <br>
+
             </div>
             <!-- Main Wrapper -->
 
-            <button id="backbutton" name="backbutton" >Click Me!</button>
 
         </div>
         <script src="cordova.js"></script>
         <script src="js/home.js"></script>
+        <script src="js/sidenav.js"></script>
     </body>
 </html>
